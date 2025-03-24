@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            var font=20;
+            function increment(font){
+                document.getElementById('p1').style.fontSize=font+'px'
+            }
+            function inc(){
+                setInterval(function(){
+                    if (font<=50){
+                        increment(font++)}
+            },1000);
+            }
+        </script>
+    </head>
+    <body id="test">
+        <p id="p1">big</p>
+        <button id="press" onclick="inc()">inc</button>
+    </body>
+</html>

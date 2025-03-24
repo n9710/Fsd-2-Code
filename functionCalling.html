@@ -1,0 +1,18 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="p1"></p>
+        <script> 
+        
+            function disply(sum){
+                document.getElementById("p1").innerHTML=sum;
+            }
+            function mycl(num1,num2,callback){
+                sum=num1+num2
+                callback(sum)
+            }
+            mycl(20,30,disply)   
+        </script>
+    </body>
+</html>

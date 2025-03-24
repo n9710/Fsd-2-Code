@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script>
+        function call() {
+            var a = '{"dob":"2001-01-07"}';
+            var b = JSON.parse(a);
+            document.getElementById("test").innerHTML = new Date(b.dob);
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="test">Get Date</h1>
+    <button onclick="call()">Click here</button>
+</body>
+
+</html>

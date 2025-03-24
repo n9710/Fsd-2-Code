@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            var font=50;
+            function increment(font){
+                document.getElementById('p1').style.fontSize=font+'px'
+            }
+            function inc(){
+                test=setInterval(function(){
+                    if (font<=150){
+                        increment(font++)}
+            },500);
+            }
+            function dec(){
+                test=setInterval(function(){
+                    if (font>=20){
+                        increment(font--)}
+            },500);
+            }
+            function stop(){
+                clearInterval(test)
+            }
+        </script>
+    </head>
+    <body id="test">
+        <p id="p1" style="font-size: 50px;">big</p>
+        <button id="press" onclick="inc()">inc</button>
+        <button id="press" onclick="dec()">dec</button>
+        <button id="press" onclick="stop()">stop</button>
+    </body>
+</html>
